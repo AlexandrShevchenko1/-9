@@ -39,8 +39,7 @@ void *Creater(void* param) {
     int num = *((int*)param);
     int time = 1 + rand()%7;
     sleep(time);
-    int data;
-    data = 1 + rand()%20;
+    int data = 1;
     pthread_mutex_lock(&mutexCounter);
     buffer.push(data);
     counter++;
